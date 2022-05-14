@@ -10,11 +10,11 @@
 				"/EHsc",
 				"/nologo",
 				"/Fe:",
-				"${fileWorkspaceFolder}\\Debug\\${fileBasenameNoExtension}.exe",
+				"${fileWorkspaceFolder}\\Debug\\run.exe",
 				"${file}"
 			],
 			"options": {
-				"cwd": "${fileWorkspaceFolder}\\Debug\\"
+				"cwd": ""
 			},
 			"problemMatcher": [
 				"$msCompile"
