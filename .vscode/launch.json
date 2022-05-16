@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${fileWorkspaceFolder}\\Debug\\run.exe",
             "args": [],
-            "stopAtEntry": false,
+            "stopAtEntry": true,
             "cwd": "${fileWorkspaceFolder}",
             "environment": [],
             "console": "externalTerminal",
