@@ -23,6 +23,14 @@ person operator+(person &p1, person &p2)
     temp.m_b = p2.m_b + p2.m_b;
     return temp;
 }
+// 函数重载的版本
+person operator+(person &p1, int a)
+{
+    person temp;
+    temp.m_a = p1.m_a + a;
+    temp.m_b = p1.m_b + a;
+    return temp;
+}
 void test01()
 {
     person p1;
@@ -36,8 +44,12 @@ void test01()
     //全局函数重载本质调用
     // person p3 = operator+(p1, p2);
     person p3 = p1 + p2;
+    //运算符重载也可以发生函数重载
+    person p4 = p1 + 20;
     cout << "p3.m_a =" << p3.m_a << endl;
     cout << "p3.m_b =" << p3.m_b << endl;
+    cout << "p4.m_a =" << p4.m_a << endl;
+    cout << "p4.m_b =" << p4.m_b << endl;
 }
 int main()
 {
